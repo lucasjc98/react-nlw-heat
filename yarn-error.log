@@ -1,5 +1,5 @@
 Arguments: 
-  /home/lucas/.asdf/installs/nodejs/14.18.1/bin/node /home/lucas/.asdf/installs/nodejs/lts/.npm/bin/yarn add -D @types/axios]
+  /home/lucas/.asdf/installs/nodejs/14.18.1/bin/node /home/lucas/.asdf/installs/nodejs/lts/.npm/bin/yarn add socket.io-cliente
 
 PATH: 
   /home/lucas/.asdf/plugins/nodejs/shims:/home/lucas/.asdf/installs/nodejs/lts/.npm/bin:/home/lucas/.asdf/installs/nodejs/lts/bin:/home/lucas/.asdf/shims:/home/lucas/.asdf/bin:/home/lucas/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lucas/.fzf/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2faxios]: Not found
+  Error: https://registry.yarnpkg.com/socket.io-cliente: Not found
       at Request.params.callback [as _callback] (/home/lucas/.asdf/installs/nodejs/14.18.1/.npm/lib/node_modules/yarn/lib/cli.js:67029:18)
       at Request.self.callback (/home/lucas/.asdf/installs/nodejs/14.18.1/.npm/lib/node_modules/yarn/lib/cli.js:140883:22)
       at Request.emit (events.js:400:28)
@@ -43,6 +43,7 @@ npm manifest:
       "sass": "^1.43.2"
     },
     "devDependencies": {
+      "@types/axios": "^0.14.0",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
       "@vitejs/plugin-react": "^1.0.0",
@@ -317,6 +318,13 @@ Lockfile:
       estree-walker "^2.0.1"
       picomatch "^2.2.2"
   
+  "@types/axios@^0.14.0":
+    version "0.14.0"
+    resolved "https://registry.yarnpkg.com/@types/axios/-/axios-0.14.0.tgz#ec2300fbe7d7dddd7eb9d3abf87999964cafce46"
+    integrity sha1-7CMA++fX3d1+udOr+HmZlkyvzkY=
+    dependencies:
+      axios "*"
+  
   "@types/prop-types@*":
     version "15.7.4"
     resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
@@ -372,7 +380,7 @@ Lockfile:
       normalize-path "^3.0.0"
       picomatch "^2.0.4"
   
-  axios@^0.23.0:
+  axios@*, axios@^0.23.0:
     version "0.23.0"
     resolved "https://registry.yarnpkg.com/axios/-/axios-0.23.0.tgz#b0fa5d0948a8d1d75e3d5635238b6c4625b05149"
     integrity sha512-NmvAE4i0YAv5cKq8zlDoPd1VLKAqX5oLuZKs8xkJa4qi6RGn0uhCYFjWtHHC9EM/MwOwYWOs53W+V0aqEXq1sg==
